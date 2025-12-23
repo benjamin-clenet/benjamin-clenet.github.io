@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Benjamin Clenet - Conception & Étude de Prix</title>
+    <style>
+        :root {
+            --primary-blue: #005f99; /* Bleu technique soutenu */
+            --ice-blue: #e0f7fa;     /* Bleu glace très clair pour le fond */
+            --cold-grey: #455a64;    /* Gris froid pour le texte */
+            --white: #ffffff;
+            --accent-cyan: #00bcd4;  /* Accent vif rappelant le froid */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--ice-blue);
+            color: var(--cold-grey);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--white);
+            box-shadow: 0 0 20px rgba(0, 95, 153, 0.15);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        /* Colonne de gauche */
+        aside {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 30px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            background-color: var(--ice-blue);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 4px solid var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-blue);
+            font-weight: bold;
+            font-size: 3em;
+        }
+
+        aside h2 {
+            font-size: 1.2em;
+            border-bottom: 2px solid var(--accent-cyan);
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        ul.skills {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.skills li {
+            background: rgba(255, 255, 255, 0.1);
+            margin-bottom: 8px;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        /* Colonne de droite */
+        main {
+            padding: 40px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--ice-blue);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        .job-title {
+            color: var(--accent-cyan);
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .summary {
+            margin-top: 15px;
+            text-align: justify;
+            font-style: italic;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            color: var(--primary-blue);
+            font-size: 1.5em;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--ice-blue);
+            padding-bottom: 5px;
+        }
+
+        .section-title::before {
+            content: '❄';
+            margin-right: 10px;
+            color: var(--accent-cyan);
+        }
+
+        .experience-item, .benevolat-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .date {
+            font-weight: bold;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+            margin-bottom: 2px;
+        }
+
+        .company {
+            font-weight: bold;
+            color: var(--primary-blue);
+            font-size: 1.1em;
+        }
+
+        .role-title {
+            font-weight: bold;
+            color: var(--cold-grey);
+            font-size: 1.05em;
+            text-decoration: underline var(--accent-cyan);
+        }
+
+        .description ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        
+        .description li {
+            margin-bottom: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                margin: 0;
+            }
+            aside {
+                text-align: center;
+            }
+            .profile-photo {
+                margin: 0 auto 20px;
+            }
+            .summary {
+                text-align: left;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="profile-photo">BC</div>
+            
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><i class="fab fa-linkedin"></i> linkedin.com/in/benjamin-clenet</p>
+                <p><i class="fas fa-map-marker-alt"></i> Treillières / Nantes</p>
+            </div>
+
+            <h2>Compétences Clés</h2>
+            <ul class="skills">
+                <li>Isolation Frigorifique</li>
+                <li>Conception technique (AutoCAD)</li>
+                <li>Chiffrage & Étude de prix</li>
+                <li>Optimisation économique</li>
+                <li>Analyse DCE & Risques</li>
+                <li>DOE & Dossiers techniques</li>
+            </ul>
+
+            <h2>Langues</h2>
+            <ul class="skills">
+                <li><strong>Anglais</strong> : Compétences professionnelles</li>
+                <li><strong>Espagnol</strong> : Bonne compréhension, expression limitée</li>
+            </ul>
+
+            <h2>Causes</h2>
+            <ul class="skills">
+                <li>Arts et culture</li>
+                <li>Droits de l’homme</li>
+                <li>Environnement</li>
+                <li>Sciences et technologie</li>
+            </ul>
+        </aside>
+
+        <main>
+            <header>
+                <h1>Benjamin Clenet</h1>
+                <div class="job-title">Conception technique & Étude de prix<br>Expert Isolation Frigorifique</div>
+                <div class="summary">
+                    <p>Fort de 15 ans d'expérience dans le domaine du bâtiment et plus spécifiquement dans celui de l'isolation frigorifique, je possède une double compétence rare : la conception technique et l'étude de prix.</p>
+                    <p>Cette polyvalence me permet d'aborder chaque dossier avec une vision globale : je sais chiffrer ce qui est dessiné, et je sais comment sera construit ce que je chiffre. Rigoureux et autonome, je suis aujourd'hui focalisé sur la fiabilité des offres et l'optimisation économique des projets.</p>
+                </div>
+            </header>
+
+            <h2 class="section-title">Expérience Professionnelle</h2>
+
+            <div class="experience-item">
+                <div class="date">Janvier 2019 - Aujourd'hui</div>
+                <div class="company">SOFRADI, Treillières</div>
+                <div class="role-title">Chargé d'études commerciales</div>
+                <div class="description">
+                    <p><em>Évolution interne vers le service commercial, capitalisant sur mon expérience de projeteur pour réaliser des chiffrages précis et optimisés.</em></p>
+                    <ul>
+                        <li><strong>Chiffrage :</strong> Analyse critique des DCE (Dossiers de Consultation) ; identification des risques et erreurs dès le chiffrage grâce à ma vision technique.</li>
+                        <li><strong>Étude de prix :</strong> Calcul des déboursés, métrés complexes et consultation des fournisseurs pour bâtir l'offre la plus pertinente.</li>
+                        <li><strong>Optimisation :</strong> Proposition de variantes techniques et/ou économiques grâce à ma connaissance métier.</li>
+                        <li><strong>Réponse aux Appels d'offres :</strong> Rédaction des mémoires techniques (méthodologie et qualité d'exécution).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="date">Décembre 2010 - Janvier 2019</div>
+                <div class="company">SOFRADI, Treillières</div>
+                <div class="role-title">Dessinateur / Projeteur</div>
+                <div class="description">
+                    <ul>
+                        <li><strong>Études d'exécution :</strong> Réalisation des plans, détails, coupes et élévations sur AutoCAD.</li>
+                        <li><strong>Synthèse :</strong> Repérage des conflits techniques et proposition de solutions constructives (lien avec architectes, MOE, MOA).</li>
+                        <li><strong>Achats :</strong> Calepinage et commande des panneaux isothermes, gestion des délais chantiers.</li>
+                        <li><strong>Dossiers techniques :</strong> Constitution des DOE et préparation des carnets de détails pour les équipes de pose.</li>
+                        <li><strong>Collaboration :</strong> Travail en binôme avec les conducteurs de travaux pour valider les choix techniques.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="section-title">Formation</h2>
+
+            <div class="experience-item">
+                <div class="date">2008 - 2010</div>
+                <div class="company">Lycée Eugène Livet</div>
+                <div class="description"><strong>BTS Bâtiment</strong></div>
+            </div>
+            <div class="experience-item">
+                <div class="date">2006 - 2008</div>
+                <div class="company">Lycée Eugène Livet</div>
+                <div class="description"><strong>BAC STI Génie civil</strong></div>
+            </div>
+
+            <h2 class="section-title">Bénévolat & Associatif</h2>
+
+            <div class="benevolat-item">
+                <div class="date">2009 - 2016</div>
+                <div class="company">VaKarM (Média e-sport)</div>
+                <div class="description">
+                    <strong>Membre du Conseil d'Administration</strong><br>
+                    Association de presse web spécialisée, n°1 de l'actualité sur Counter-Strike (3M de vues/mois).
+                    <ul>
+                        <li>Gestion d'une équipe bénévole de 45 personnes.</li>
+                        <li>Création de contenu (écrit, vidéo, photo).</li>
+                        <li>Couverture d'événements internationaux via sponsoring.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="benevolat-item">
+                <div class="date">2011 - Aujourd'hui</div>
+                <div class="company">Hellfest Productions</div>
+                <div class="description">
+                    <strong>Bénévole Logistique & Accueil Artistes</strong>
+                    <ul>
+                        <li>Accueil bilingue des groupes.</li>
+                        <li>Organisation logistique (transfert instruments/matériel vers la scène).</li>
+                        <li>Gestion du parking artiste (Tourbus, camions, vans).</li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
